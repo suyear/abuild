@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service>
+	<serviceName>member</serviceName>
+	<description>会员管理</description>
+	<baseData>42001</baseData>
+	<packageName>cn.abuild.member</packageName>
+
+
+	<entity>
+		<entityName>Member</entityName>
+		<entityType>1</entityType>
+		<tableName>abuild_member</tableName>
+		<entityLabel>会员列表</entityLabel>
+		<entityBaseData>42401</entityBaseData>
+
+
+		<extendEntity>
+			<extendServiceName></extendServiceName>
+			<extendEntityName></extendEntityName>
+		</extendEntity>
+		<field>
+			<fieldName>id</fieldName>
+			<fieldLabel>id</fieldLabel>
+			<isPrimaryKey>true</isPrimaryKey>
+			<isSearch>false</isSearch>
+			<isListDisplay>false</isListDisplay>
+			<isReadOnly>true</isReadOnly>
+			<isHidden>true</isHidden>
+			<isFull>false</isFull>
+			<isMainLookup>false</isMainLookup>
+			<defaultValue></defaultValue>
+			<validator></validator>
+			<length>20</length>
+			<scale></scale>
+			<isParent>false</isParent>
+			<fieldType>2</fieldType>
+
+			<lookupEntity>
+				<lkServiceName></lkServiceName>
+				<lkEntityName></lkEntityName>
+				<isLkForeignKey>false</isLkForeignKey>
+				<mainLkFieldName></mainLkFieldName>
+			</lookupEntity>
+
+		</field>
+
+
+
+		<field>
+			<fieldName>member_name</fieldName>
+			<fieldLabel>会员名</fieldLabel>
+			<isPrimaryKey>false</isPrimaryKey>
+			<isSearch>true</isSearch>
+			<isListDisplay>true</isListDisplay>
+			<isReadOnly>false</isReadOnly>
+			<isHidden>false</isHidden>
+			<isFull>true</isFull>
+			<isMainLookup>false</isMainLookup>
+			<defaultValue></defaultValue>
+			<validator></validator>
+			<length>50</length>
+			<scale></scale>
+			<isParent>false</isParent>
+			<fieldType>1</fieldType>
+
+			<lookupEntity>
+				<lkServiceName></lkServiceName>
+				<lkEntityName></lkEntityName>
+				<isLkForeignKey>false</isLkForeignKey>
+				<mainLkFieldName></mainLkFieldName>
+			</lookupEntity>
+
+		</field>
+
+
+
+		<field>
+			<fieldName>password</fieldName>
+			<fieldLabel>密码</fieldLabel>
+			<isPrimaryKey>false</isPrimaryKey>
+			<isSearch>false</isSearch>
+			<isListDisplay>true</isListDisplay>
+			<isReadOnly>false</isReadOnly>
+			<isHidden>false</isHidden>
+			<isFull>true</isFull>
+			<isMainLookup>false</isMainLookup>
+			<defaultValue></defaultValue>
+			<validator></validator>
+			<length>50</length>
+			<scale></scale>
+			<isParent>false</isParent>
+			<fieldType>1</fieldType>
+
+			<lookupEntity>
+				<lkServiceName></lkServiceName>
+				<lkEntityName></lkEntityName>
+				<isLkForeignKey>false</isLkForeignKey>
+				<mainLkFieldName></mainLkFieldName>
+			</lookupEntity>
+
+		</field>
+
+
+
+
+
+
+		<field>
+			<fieldName>description</fieldName>
+			<fieldLabel>描述</fieldLabel>
+			<isPrimaryKey>false</isPrimaryKey>
+			<isSearch>false</isSearch>
+			<isListDisplay>true</isListDisplay>
+			<isReadOnly>false</isReadOnly>
+			<isHidden>false</isHidden>
+			<isFull>false</isFull>
+			<isMainLookup>false</isMainLookup>
+			<defaultValue></defaultValue>
+			<validator></validator>
+			<length>1000</length>
+			<scale></scale>
+			<isParent>false</isParent>
+			<fieldType>1</fieldType>
+
+			<lookupEntity>
+				<lkServiceName></lkServiceName>
+				<lkEntityName></lkEntityName>
+				<isLkForeignKey>false</isLkForeignKey>
+				<mainLkFieldName></mainLkFieldName>
+			</lookupEntity>
+
+		</field>
+
+
+
+	</entity>
+</service>

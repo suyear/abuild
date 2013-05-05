@@ -1,0 +1,55 @@
+<!DOCTYPE xwork PUBLIC "-//OpenSymphony Group//XWork 1.1.1//EN" "http://www.opensymphony.com/xwork/xwork-1.1.1.dtd">
+
+<xwork>
+	<package name="member" extends="hi">
+
+		<action name="memberList" class="cn.abuild.member.action.webwork.MemberListAction"
+			method="findAll">
+			<result name="success">/member/MemberList.jsp</result>
+			<interceptor-ref name="modelParamsStack" />
+		</action>
+
+		<action name="memberSave" class="cn.abuild.member.action.webwork.MemberSaveAction">
+			<result name="success" type="redirect-action">memberList</result>
+			<interceptor-ref name="modelParamsStack" />
+		</action>
+		<action name="memberEditSave" class="cn.abuild.member.action.webwork.MemberEditAction">
+			<result name="success" type="redirect-action">memberList</result>
+			<interceptor-ref name="modelParamsStack" />
+		</action>
+
+		<action name="memberEdit" class="cn.abuild.member.action.webwork.MemberViewAction">
+			<result name="success">/member/MemberEdit.jsp</result>
+			<interceptor-ref name="modelParamsStack" />
+		</action>
+
+		<action name="memberView" class="cn.abuild.member.action.webwork.MemberViewAction">
+			<result name="success">/member/MemberView.jsp</result>
+			<interceptor-ref name="modelParamsStack" />
+		</action>
+
+		<action name="memberRemove"
+			class="cn.abuild.member.action.webwork.MemberRemoveAction">
+			<result name="success" type="redirect-action">memberList</result>
+			<interceptor-ref name="modelParamsStack" />
+		</action>
+
+		<action name="memberRemoveAll"
+			class="cn.abuild.member.action.webwork.MemberRemoveAllAction">
+			<result name="success" type="redirect-action">memberList</result>
+			<interceptor-ref name="modelParamsStack" />
+		</action>
+
+		<action name="memberLookup" class="cn.abuild.member.action.webwork.MemberListAction">
+			<result name="success">/member/MemberList.jsp</result>
+			<interceptor-ref name="modelParamsStack" />
+		</action>
+
+
+		<action name="ReturnDefaultPwd"
+			class="cn.abuild.member.action.webwork.ReturnDefaultPwdAction">
+			<result name="success" type="redirect-action">memberList</result>
+			<interceptor-ref name="modelParamsStack" />
+		</action>
+	</package>
+</xwork>
