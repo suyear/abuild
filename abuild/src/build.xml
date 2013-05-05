@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="juximao_v2">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../eclipse"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <path id="Web App Libraries.libraryclasspath">
+        <pathelement location="web/WEB-INF/lib/acegi-security-1.0.3.jar"/>
+        <pathelement location="web/WEB-INF/lib/activation.jar"/>
+        <pathelement location="web/WEB-INF/lib/ant-1.6.2-stripped.jar"/>
+        <pathelement location="web/WEB-INF/lib/antlr-2.7.5H3.jar"/>
+        <pathelement location="web/WEB-INF/lib/antlr.jar"/>
+        <pathelement location="web/WEB-INF/lib/asm-attrs.jar"/>
+        <pathelement location="web/WEB-INF/lib/asm.jar"/>
+        <pathelement location="web/WEB-INF/lib/bsf-2.4.0.jar"/>
+        <pathelement location="web/WEB-INF/lib/bsh-2.0b2.jar"/>
+        <pathelement location="web/WEB-INF/lib/c3p0-0.8.5.2.jar"/>
+        <pathelement location="web/WEB-INF/lib/cglib-2.1.jar"/>
+        <pathelement location="web/WEB-INF/lib/comm.jar"/>
+        <pathelement location="web/WEB-INF/lib/commons-beanutils.jar"/>
+        <pathelement location="web/WEB-INF/lib/commons-codec.jar"/>
+        <pathelement location="web/WEB-INF/lib/commons-collections-3.1.jar"/>
+        <pathelement location="web/WEB-INF/lib/commons-dbcp-1.3.jar"/>
+        <pathelement location="web/WEB-INF/lib/commons-digester.jar"/>
+        <pathelement location="web/WEB-INF/lib/commons-fileupload.jar"/>
+        <pathelement location="web/WEB-INF/lib/commons-httpclient.jar"/>
+        <pathelement location="web/WEB-INF/lib/commons-io.jar"/>
+        <pathelement location="web/WEB-INF/lib/commons-jexl-1.1.jar"/>
+        <pathelement location="web/WEB-INF/lib/commons-lang-2.1.jar"/>
+        <pathelement location="web/WEB-INF/lib/commons-logging-1.0.4.jar"/>
+        <pathelement location="web/WEB-INF/lib/commons-net-3.1.jar"/>
+        <pathelement location="web/WEB-INF/lib/commons-pool-1.5.6.jar"/>
+        <pathelement location="web/WEB-INF/lib/dom4j-1.6.jar"/>
+        <pathelement location="web/WEB-INF/lib/ehcache-1.2.3.jar"/>
+        <pathelement location="web/WEB-INF/lib/freemarker.jar"/>
+        <pathelement location="web/WEB-INF/lib/gson-1.7.1.jar"/>
+        <pathelement location="web/WEB-INF/lib/hibernate3.jar"/>
+        <pathelement location="web/WEB-INF/lib/ibatis-2.3.4.726-hi.jar"/>
+        <pathelement location="web/WEB-INF/lib/ibatis-3-core-hi.jar"/>
+        <pathelement location="web/WEB-INF/lib/ibatis-sqlmap-2.jar"/>
+        <pathelement location="web/WEB-INF/lib/jakarta-oro-2.0.8.jar"/>
+        <pathelement location="web/WEB-INF/lib/javamail.jar"/>
+        <pathelement location="web/WEB-INF/lib/jaxb-api.jar"/>
+        <pathelement location="web/WEB-INF/lib/jaxb-impl.jar"/>
+        <pathelement location="web/WEB-INF/lib/jaxb-xjc.jar"/>
+        <pathelement location="web/WEB-INF/lib/jaxb1-impl.jar"/>
+        <pathelement location="web/WEB-INF/lib/jaxen-1.1-beta-7.jar"/>
+        <pathelement location="web/WEB-INF/lib/jaxen-core.jar"/>
+        <pathelement location="web/WEB-INF/lib/jaxen-jdom.jar"/>
+        <pathelement location="web/WEB-INF/lib/jdom.jar"/>
+        <pathelement location="web/WEB-INF/lib/jsr173_1.0_api.jar"/>
+        <pathelement location="web/WEB-INF/lib/jstl-1.1.2.jar"/>
+        <pathelement location="web/WEB-INF/lib/jta.jar"/>
+        <pathelement location="web/WEB-INF/lib/jtds-1.2.jar"/>
+        <pathelement location="web/WEB-INF/lib/jxl-2.6.6.jar"/>
+        <pathelement location="web/WEB-INF/lib/jxls-core-0.9.5.jar"/>
+        <pathelement location="web/WEB-INF/lib/jxls-reader-0.9.5.jar"/>
+        <pathelement location="web/WEB-INF/lib/log4j-1.2.9.jar"/>
+        <pathelement location="web/WEB-INF/lib/mysql-connector-java-5.1.10-bin.jar"/>
+        <pathelement location="web/WEB-INF/lib/objectprofiler.jar"/>
+        <pathelement location="web/WEB-INF/lib/ognl.jar"/>
+        <pathelement location="web/WEB-INF/lib/oscore.jar"/>
+        <pathelement location="web/WEB-INF/lib/poi-3.0.2-FINAL-20080204.jar"/>
+        <pathelement location="web/WEB-INF/lib/poi-contrib-3.0.2-FINAL-20080204.jar"/>
+        <pathelement location="web/WEB-INF/lib/poi-scratchpad-3.0.2-FINAL-20080204.jar"/>
+        <pathelement location="web/WEB-INF/lib/quartz-1.6.0.jar"/>
+        <pathelement location="web/WEB-INF/lib/rife-continuations.jar"/>
+        <pathelement location="web/WEB-INF/lib/saxpath.jar"/>
+        <pathelement location="web/WEB-INF/lib/spring-mock.jar"/>
+        <pathelement location="web/WEB-INF/lib/spring.jar"/>
+        <pathelement location="web/WEB-INF/lib/standard-1.1.2.jar"/>
+        <pathelement location="web/WEB-INF/lib/struts-menu-2.4.2.jar"/>
+        <pathelement location="web/WEB-INF/lib/struts.jar"/>
+        <pathelement location="web/WEB-INF/lib/struts2-core-2.0.14.jar"/>
+        <pathelement location="web/WEB-INF/lib/struts2-spring-plugin-2.0.14.jar"/>
+        <pathelement location="web/WEB-INF/lib/velocity-1.4.jar"/>
+        <pathelement location="web/WEB-INF/lib/velocity-tools-view-1.1.jar"/>
+        <pathelement location="web/WEB-INF/lib/webwork-2.2.4.jar"/>
+        <pathelement location="web/WEB-INF/lib/xalan.jar"/>
+        <pathelement location="web/WEB-INF/lib/xerces.jar"/>
+        <pathelement location="web/WEB-INF/lib/xml-apis.jar"/>
+        <pathelement location="web/WEB-INF/lib/xwork-2.0.7.jar"/>
+        <pathelement location="web/WEB-INF/lib/xwork.jar"/>
+    </path>
+    <path id="EAR Libraries.libraryclasspath"/>
+    <path id="Apache Tomcat v7.0 [Apache Tomcat v7.0].libraryclasspath">
+        <pathelement location="${ECLIPSE_HOME}/apache-tomcat-7.0.29/lib/annotations-api.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/apache-tomcat-7.0.29/lib/catalina-ant.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/apache-tomcat-7.0.29/lib/catalina-ha.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/apache-tomcat-7.0.29/lib/catalina-tribes.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/apache-tomcat-7.0.29/lib/catalina.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/apache-tomcat-7.0.29/lib/ecj-3.7.2.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/apache-tomcat-7.0.29/lib/el-api.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/apache-tomcat-7.0.29/lib/jasper-el.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/apache-tomcat-7.0.29/lib/jasper.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/apache-tomcat-7.0.29/lib/jsp-api.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/apache-tomcat-7.0.29/lib/servlet-api.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/apache-tomcat-7.0.29/lib/tomcat-api.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/apache-tomcat-7.0.29/lib/tomcat-coyote.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/apache-tomcat-7.0.29/lib/tomcat-dbcp.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/apache-tomcat-7.0.29/lib/tomcat-i18n-es.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/apache-tomcat-7.0.29/lib/tomcat-i18n-fr.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/apache-tomcat-7.0.29/lib/tomcat-i18n-ja.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/apache-tomcat-7.0.29/lib/tomcat-jdbc.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/apache-tomcat-7.0.29/lib/tomcat-util.jar"/>
+    </path>
+    <path id="juximao_v2.classpath">
+        <pathelement location="web/WEB-INF/classes"/>
+        <path refid="Web App Libraries.libraryclasspath"/>
+        <path refid="EAR Libraries.libraryclasspath"/>
+        <path refid="Apache Tomcat v7.0 [Apache Tomcat v7.0].libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="web/WEB-INF/classes"/>
+        <copy includeemptydirs="false" todir="web/WEB-INF/classes">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="web/WEB-INF/classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="web/WEB-INF/classes" includeantruntime="false" source="${source}" target="${target}"  encoding="UTF-8">
+            <src path="src"/>
+            <classpath refid="juximao_v2.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+</project>

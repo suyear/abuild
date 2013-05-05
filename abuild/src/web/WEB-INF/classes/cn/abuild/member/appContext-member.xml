@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+    <bean id="cn.abuild.member.dao.MemberDAOImpl" class="cn.abuild.member.dao.${hi.orm.package}.MemberDAO${hi.orm.type}">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    <bean id="cn.abuild.member.dao.MemberDAO" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="proxyInterfaces" value="cn.abuild.member.dao.MemberDAO" />
+        <property name="interceptorNames">
+            <list>
+                <value>cn.abuild.member.dao.MemberDAOImpl</value>
+            </list>
+        </property>
+    </bean>
+    <bean id="cn.abuild.member.model.Member" parent="txProxyTemplate">
+        <property name="target">
+            <bean class="cn.abuild.member.service.impl.MemberManagerImpl">
+                <property name="DAO" ref="cn.abuild.member.dao.MemberDAO"/>
+                <property name="modelClass" value="cn.abuild.member.model.Member"/>
+            </bean>
+        </property>
+    </bean>
+</beans>
