@@ -19,15 +19,6 @@ public class MemberListAction extends BaseAction{
 	private Member member;
 	private MemberPageInfo pageInfo;
 	private List<Member> members;
-	private InputStream downloadStream;
-	
-	public InputStream getDownloadStream() {
-		return downloadStream;
-	}
-
-	public void setDownloadStream(InputStream downloadStream) {
-		this.downloadStream = downloadStream;
-	}
 
 	public String findAll() throws Exception {
 		MemberManager memberMgr = (MemberManager)SpringContextHolder.getBean(Member.class);
@@ -38,7 +29,7 @@ public class MemberListAction extends BaseAction{
 			pageInfo.setSorterDirection("desc");
 		}
 		
-		List<Member>list = memberMgr.getMemberAll();
+		members = memberMgr.getMemberAll();
 		return returnCommand();	
 	}
 	
