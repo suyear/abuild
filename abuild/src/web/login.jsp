@@ -9,7 +9,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=GBK" />
 <link rel="stylesheet" type="text/css" href="includes/style.css"  >
-<title>聚喜猫后台管理系统</title>
+<title>Abuild Authored By SUYEAR</title>
 <style type="text/css">
 <!--
 body {

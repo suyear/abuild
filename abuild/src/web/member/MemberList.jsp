@@ -53,9 +53,12 @@
 <div class="pageContent">
 	<div class="panelBar">
 		<ul class="toolBar">
-			<li><a class="add" href="<hi:url>memberEdit.action?member.id=-1</hi:url>" target="navTab" rel="member"><span><hi:text key="新建" parameterLanguageKeys="会员列表"/></span></a></li>
-			<li><a class="delete" href="<hi:url>memberRemoveAll.action?ajax=1</hi:url>" target="removeSelected" title="<hi:text key="确实要删除这些记录吗?"/>"><span><hi:text key="批量删除"/></span></a></li>
-			<li><a class="icon" href="javascript:$.bringBack({id:'-1',member_name:'',password:'',description:'description'})"><span><hi:text key="重置"/></span></a></li>
+		<c:choose>
+		<c:when test="${empty lookup}">
+		<authz:authorize ifAnyGranted="MENULINK_SAVE"><li><a class="add" href="<hi:url>memberEdit.action?member.id=-1</hi:url>" target="navTab" rel="member"><span><hi:text key="新建" parameterLanguageKeys="会员列表"/></span></a></li></authz:authorize>
+		<authz:authorize ifAnyGranted="MENULINK_SAVE"><li><a class="delete" href="<hi:url>memberRemoveAll.action?ajax=1</hi:url>" target="removeSelected" title="<hi:text key="确实要删除这些记录吗?"/>"><span><hi:text key="批量删除"/></span></a></li></authz:authorize>
+		</c:when>
+		</c:choose>
 		</ul>
 	</div>
 	<table class="table" width="100%" layoutH="138" targetType="${targetType}">

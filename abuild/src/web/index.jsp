@@ -8,7 +8,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=7" />
-<title>聚喜猫后台管理系统</title>
+<title>Abuild Authored By SUYEAR</title>
 <%@ include file="/includes/styles.jsp"%>
 <script type="text/javascript">
     $( function() {
